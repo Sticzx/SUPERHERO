@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(82, 80, 80);
+}
+
+.btn{
+    background-color: orange;
+    scale: 200%;
+    margin-top: 10vw;
+    margin-left: 10vw;
+    padding: 1em;
+}
