@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/zdarzenia.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>ZDARZENIA</h1>
+    </header>
+    <main>
+        <p>Aby zareagować na wykonanie zdarzenia, powinniśmy podpiąć dla danego elementu funkcję nasłuchującą, która zostanie odpalona w momencie wykonania danego zdarzenia. Służy do tego funkcja element.addEventListener().</p>
+        <p>Do wyrejestrowania (odpięcia) danej funkcji służy metoda element.removeEventListener(), która przyjmuje 2 parametry: nazwę zdarzenia i funkcję, którą chcemy wyrejestrować.</p>
+        <p>Ten przycisk liczy do 5 za pomocą addEventListener(), a po dojściu do 5 kliku przestaje liczyc dzięki removeEventListener().</p>
+        <button class="button">Kliknij mnie</button>
+        <br>
+        <p>Podpinając daną funkcję nasłuchującą, możemy ustawić jej parametr (najczęściej nazywany event lub e, ale nazwa może być dowolna), do którego Javascript każdorazowo przekaże nam dodatkowy obiekt z informacjami związanymi z tym zdarzeniem.</p>
+        <button id="btn">Kliknij i sprawdź wynik w konsoli</button>
+        <h2>ZDARZENIA - KLAWISZE</h2>
+        <p>Najczęściej używanymi zdarzeniami w przypadku klawiatury są: keydown	naciśnięcie, przytrzymanie klawisza. keyup	puszczenie klawisza</p>
+        <p>Jak w przypadku innych zdarzeń przekazywany do naszej funkcji obiekt udostępnia nam dużo pożytecznych informacji.
+
+            Aby odczytać, który klawisz został naciśnięty możemy posłużyć się dwoma właściwościami: event.key oraz event.code.
+            
+            event.key	Nazwa klawisza z uwzględnieniem wielkości liter
+            event.code	Kod klawisza bez uwzględnienia wielkości liter</p>
+            <form class="form">
+                <label for="keyTestEvent">Sprawdź: </label>
+                <input type="text" id="keyTestEvent">
+                <br>
+                <div id="keyTestEventShow">
+            </form>
+            </main>
+            <aside>
+                <h2>ZDARZENIA - MYSZKA</h2>
+                <p>Do zdarzeń, które wywołuje kursor myszki zaliczamy:
+
+                mousedown	przycisk myszki został naciśnięty
+                mouseup	przycisk myszki został puszczony
+                click	przycisk myszki został naciśnięty i puszczony (czyli normalne kliknięcie)
+                dblclick	podwójne kliknięcie
+                mousemove	kursor porusza się po elemencie
+                mouseover	kursor znalazł się na elemencie
+                mouseout	kursor opuścił dany element
+                mouseenter	kursor znalazł się na elemencie
+                mouseleave	kursor opuścił dany element
+                contextmenu	zdarzenie odpalane po kliknięciu prawego guzika myszy (jak otwieranie podręcznego menu)</p>
+            </aside>
+    <footer>
+        <a href="index.html">Powrót</a>
+        <p>&copy; Szymon Rzeszowski & Mateusz Sycz 1p</p>
+    </footer>
+</body>
+</html>

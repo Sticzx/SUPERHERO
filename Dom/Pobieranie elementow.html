@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pobieranie elementów</title>
+    <script src="/js/pobieranie_elementow.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Pobieranie elementów</h1>
+    </header>
+    <div class="container">
+    <main>
+        <p>Jeżeli pobieramy pojedynczy element za pomocą querySelector() lub getElementById(), od razu możemy zacząć na nim działać ustawiając mu tekst,style, czy inne właściwości, ale też pobierając w nim inne elementy.</p>
+        <ul>
+            <li id="first">item1</li>
+            <li class="second">item2</li>
+            <li class="third">item3</li>
+            <li class="forth">item4</li>
+            <li class="fifth">item5</li>
+        </ul>
+
+        <li><strong>Pętle po kolekcjach</strong></li>
+        
+    </main>
+
+    <div class="moduł">
+        <p>Ta wiadomość ma kolor czerwony</p>
+        <p>Kolor czerwony</p>
+    </div>
+
+        <p>Jeżeli jednak używamy metod do pobrania wielu elementów (np. querySelectorAll) w rezultacie dostajemy kolekcję elementów (nawet jeżeli elementów jest jeden lub wcale). Dla nas oznacza to tyle, że praktycznie zawsze będziemy musieli tutaj działać tak jak na tablicy z obiektami:
+        </p>
+    <div class="moduł1">
+        <p>Ta wiadomość ma kolor jasny niebieski</p>
+        <p>Tak samo jak ta</p>
+    </div>
+    
+    <button class="button">Klik</button>
+    
+    <footer>
+        <a href="index.html">Powrót</a>
+        <p>&copy; Szymon Rzeszowski & Mateusz Sycz 1p</p>
+    </footer>
+    </div>
+</body>
+</html>
